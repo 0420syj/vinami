@@ -1,8 +1,10 @@
-# Yarn Berry Pnp Zero-Install
+# Yarn Berry without Zero-Install
+.pnp.*
 .yarn/*
-!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+node_modules
