@@ -1,0 +1,14 @@
+{
+  "name": "vinami",
+  "packageManager": "yarn@3.5.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "common/*"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}
