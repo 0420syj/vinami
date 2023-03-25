@@ -1,7 +1,7 @@
 ---
 name: "[FE] Feature request"
 about: "Suggest an idea for frontend feature"
-title: "[feature] : "
+title: "[feature] "
 labels: ["feature", "FE"]
 assignees: "0420syj"
 ---
