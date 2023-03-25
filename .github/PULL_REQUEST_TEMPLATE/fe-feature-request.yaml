@@ -1,0 +1,35 @@
+name: "[FE] Feature request"
+description: "Suggest an idea for frontend feature"
+title: "[Feature]: "
+labels: ["feature", "FE"]
+assignees:
+    - 0420syj
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Describe your changes in detail
+    - type: input
+      id: description
+      attributes:
+          label: Description
+          description: Describe your changes in detail
+          placeholder: Add awesome button
+      validations:
+          required: true
+    - type: textarea
+      id: motivation-and-context
+      attributes:
+          label: Motivation and Context
+          description: Why is this change required? What problem does it solve?
+          placeholder: By adding this button, users are able to do X, Y, and Z.
+      validations:
+          required: true
+    - type: input
+      id: issue
+      attributes:
+          label: Related Issue
+          description: If it fixes an open issue, please link to the issue here.
+          placeholder: "Close #1"
+      validations:
+          required: false
