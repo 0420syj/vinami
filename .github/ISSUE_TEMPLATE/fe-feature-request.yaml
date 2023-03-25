@@ -1,5 +1,5 @@
-name: "[Testing] Feature for front-end"
-description: testing description
+name: "[FE] Feature request"
+description: "Suggest an idea for frontend feature"
 title: "[Feature]: "
 labels: ["feature", "FE"]
 assignees:
@@ -8,7 +8,7 @@ body:
     - type: markdown
       attributes:
           value: |
-              Thanks for taking the time to fill out this bug report!
+              Describe your changes in detail
     - type: input
       id: description
       attributes:
@@ -30,6 +30,6 @@ body:
       attributes:
           label: Related Issue
           description: If it fixes an open issue, please link to the issue here.
-          placeholder: Close #1
+          placeholder: "Close #1"
       validations:
           required: false
