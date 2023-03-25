@@ -1,6 +1,17 @@
+<!-- Add NewButton from @vinami/ui -->
+
 <template>
     <div>
-        <h1>About</h1>
-        <p>This is the about page</p>
+        <h1>Index</h1>
+        <NewButton label="Large Button" @click="handleClick" size="large" />
+        <p>This is the index page</p>
     </div>
 </template>
+
+<script setup>
+import { NewButton } from "@vinami/ui";
+
+const handleClick = () => {
+    console.log("Clicked");
+};
+</script>
