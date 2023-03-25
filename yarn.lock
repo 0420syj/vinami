@@ -4791,6 +4791,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vinami/ui@workspace:common/ui":
+  version: 0.0.0-use.local
+  resolution: "@vinami/ui@workspace:common/ui"
+  dependencies:
+    "@babel/core": ^7.21.3
+    "@mdx-js/react": ^1.6.22
+    "@storybook/addon-actions": ^6.5.16
+    "@storybook/addon-docs": ^6.5.16
+    "@storybook/addon-essentials": ^6.5.16
+    "@storybook/addon-interactions": ^6.5.16
+    "@storybook/addon-links": ^6.5.16
+    "@storybook/builder-vite": ^0.4.2
+    "@storybook/react": ^6.5.16
+    "@storybook/testing-library": ^0.0.13
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    "@vitejs/plugin-react-swc": ^3.0.0
+    babel-loader: ^8.3.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^4.9.3
+    vite: ^4.2.0
+  languageName: unknown
+  linkType: soft
+
 "@vitejs/plugin-react-swc@npm:^3.0.0":
   version: 3.2.0
   resolution: "@vitejs/plugin-react-swc@npm:3.2.0"
@@ -5395,6 +5420,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "admin-cc3da7@workspace:apps/admin"
   dependencies:
+    "@vinami/ui": "workspace:common/ui"
     nuxt: ^3.3.1
   languageName: unknown
   linkType: soft
@@ -12261,6 +12287,7 @@ __metadata:
     "@types/node": 18.15.3
     "@types/react": 18.0.28
     "@types/react-dom": 18.0.11
+    "@vinami/ui": "workspace:common/ui"
     next: 13.2.4
     react: 18.2.0
     react-dom: 18.2.0
@@ -17209,31 +17236,6 @@ __metadata:
   checksum: 7b3897df38b6fc7d7d9f4dcd658599d81aa2b1fb0d074829dd4e5290f7318dbca1f4af2f45acb833b95b1fe0ed4698662ab61b87e94328eb4c0a0d3435baf924
   languageName: node
   linkType: hard
-
-"ui@workspace:common/ui":
-  version: 0.0.0-use.local
-  resolution: "ui@workspace:common/ui"
-  dependencies:
-    "@babel/core": ^7.21.3
-    "@mdx-js/react": ^1.6.22
-    "@storybook/addon-actions": ^6.5.16
-    "@storybook/addon-docs": ^6.5.16
-    "@storybook/addon-essentials": ^6.5.16
-    "@storybook/addon-interactions": ^6.5.16
-    "@storybook/addon-links": ^6.5.16
-    "@storybook/builder-vite": ^0.4.2
-    "@storybook/react": ^6.5.16
-    "@storybook/testing-library": ^0.0.13
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    "@vitejs/plugin-react-swc": ^3.0.0
-    babel-loader: ^8.3.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^4.9.3
-    vite: ^4.2.0
-  languageName: unknown
-  linkType: soft
 
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
