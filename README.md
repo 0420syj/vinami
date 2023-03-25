@@ -26,6 +26,7 @@ A wine pairing service that helps you find the perfect wine to pair with your fo
 -   [Yarn](https://yarnpkg.com/) - Dependency Management
     -   [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) - Yarn Workspaces is a feature that allows you to setup multiple packages in such a way that you only need to run yarn install once to install all of them in a single pass.
 -   [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+-   [Storybook](https://storybook.js.org/) - UI component explorer for frontend developers
 
 ## Authors
 
