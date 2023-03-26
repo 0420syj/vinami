@@ -19,6 +19,7 @@
     },
     "scripts": {
         "mariage": "yarn workspace mariage",
-        "admin": "yarn workspace admin-cc3da7"
+        "admin": "yarn workspace admin-cc3da7",
+        "storybook": "yarn workspace @vinami/ui storybook"
     }
 }
