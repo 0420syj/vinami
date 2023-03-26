@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,51 @@ export default function Home() {
             </Head>
             <main>
                 <h1>Vinami</h1>
+                <ul>
+                    <li>
+                        <Link href="/food">Food</Link>
+                    </li>
+                    <ul>
+                        <li>
+                            <Link href="/food/westren">Westren</Link>
+                        </li>
+                        <li>
+                            <Link href="/food/japanese">Japanese</Link>
+                        </li>
+                        <li>
+                            <Link href="/food/chinese">Chinese</Link>
+                        </li>
+                        <li>
+                            <Link href="/food/korean">Korean</Link>
+                        </li>
+                    </ul>
+                    <li>
+                        <Link href="/wine">Wine</Link>
+                        <ul>
+                            <li>
+                                <Link href="/wine/white">White</Link>
+                            </li>
+                            <li>
+                                <Link href="/wine/red">Red</Link>
+                            </li>
+                            <li>
+                                <Link href="/wine/rose">Rose</Link>
+                            </li>
+                            <li>
+                                <Link href="/wine/fortified">Fortified</Link>
+                            </li>
+                            <li>
+                                <Link href="/wine/orange">Orange</Link>
+                            </li>
+                            <li>
+                                <Link href="/wine/dessert">Dessert</Link>
+                            </li>
+                            <li>
+                                <Link href="/wine/sparkling">Sparkling</Link>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </main>
         </>
     );
