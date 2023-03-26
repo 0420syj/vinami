@@ -2,6 +2,11 @@
 
 A wine pairing service that helps you find the perfect wine to pair with your food.
 
+## Translation
+
+-   [English](README.md)
+-   [한국어](README.KR.md)
+
 ## Table of Contents
 
 -   [Getting Started](#getting-started)
