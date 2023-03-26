@@ -4,11 +4,12 @@ A wine pairing service that helps you find the perfect wine to pair with your fo
 
 ## Table of Contents
 
-<!-- -   [Getting Started](#getting-started) -->
-<!-- -   [Prerequisites](#prerequisites) -->
-<!-- -   [Installing](#installing) -->
-<!-- -   [Running the tests](#running-the-tests) -->
-<!-- -   [Deployment](#deployment) -->
+-   [Getting Started](#getting-started)
+
+    -   [Prerequisites](#prerequisites)
+    -   [Installing](#installing)
+        <!-- -   [Running the tests](#running-the-tests) -->
+        <!-- -   [Deployment](#deployment) -->
 
 -   [Built With](#built-with)
 -   [Project Structure](#project-structure)
@@ -17,6 +18,43 @@ A wine pairing service that helps you find the perfect wine to pair with your fo
 -   [Authors](#authors)
 -   [License](#license)
 <!-- -   [Acknowledgments](#acknowledgments) -->
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+-   [Node.js](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine.
+-   [Yarn](https://yarnpkg.com/) - Dependency Management
+
+### Installing
+
+1.  Clone the repo
+
+    ```bash
+    git clone https://github.com/0420syj/vinami.git
+    cd vinami
+    ```
+
+2.  Install dependencies
+
+    ```bash
+    yarn
+    ```
+
+3.  Start the development server
+
+    ```bash
+    yarn mariage dev
+    yarn admin dev
+    ```
+
+4.  Start the storybook
+
+    ```bash
+    yarn storybook
+    ```
 
 ## Built With
 
@@ -35,10 +73,10 @@ A wine pairing service that helps you find the perfect wine to pair with your fo
 ```bash
 . # Root
 ├── apps
-│   ├── admin # Nuxt.js
-│   └── mariage # Next.js
+│   ├── admin # Admin app (Nuxt.js)
+│   └── mariage # Front app (Next.js)
 └── common
-    ├── ui # Storybook
+    ├── ui # UI components (Storybook)
     └── utils # Shared utils
 ```
 
