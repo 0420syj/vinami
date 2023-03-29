@@ -72,6 +72,7 @@ These instructions will get you a copy of the project up and running on your loc
     -   [Yarn Berry](https://yarnpkg.com/getting-started/qa#why-should-you-upgrade-to-yarn-modern) - Yarn 2 is a new version of Yarn that has been designed from the ground up with reliability, speed, and security in mind. It has already been used to build large production codebases at companies such as Bloomberg, Facebook, Google, and Microsoft.
 -   [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
 -   [Storybook](https://storybook.js.org/) - UI component explorer for frontend developers used in [common/ui](common/ui)
+-   [Jest](https://jestjs.io/) - Delightful Javascript Testing Framework with a focus on simplicity
 
 ## Project Structure
 
