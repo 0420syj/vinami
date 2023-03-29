@@ -72,6 +72,7 @@
     -   [Yarn Berry](https://yarnpkg.com/getting-started/qa#why-should-you-upgrade-to-yarn-modern) - Yarn Berry는 속도와 안정성을 향상시키고, 새로운 기능을 추가한 Yarn의 새로운 버전입니다.
 -   [TypeScript](https://www.typescriptlang.org/) - JavaScript의 슈퍼셋으로 정적 타입을 지원합니다.
 -   [Storybook](https://storybook.js.org/) - [common/ui](common/ui)에서 사용된 UI 컴포넌트를 개발하고 테스트할 수 있도록 도와주는 도구입니다.
+-   [Jest](https://jestjs.io/) - 테스트 프레임워크
 
 ## 프로젝트 구조
 
