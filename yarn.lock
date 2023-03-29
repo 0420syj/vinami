@@ -5416,9 +5416,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"admin-cc3da7@workspace:apps/admin":
+"admin@workspace:apps/admin":
   version: 0.0.0-use.local
-  resolution: "admin-cc3da7@workspace:apps/admin"
+  resolution: "admin@workspace:apps/admin"
   dependencies:
     "@vinami/ui": "workspace:common/ui"
     nuxt: ^3.3.1
