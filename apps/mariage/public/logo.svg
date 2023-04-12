@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 250" width="100" height="250">
+    <defs>
+      <style>
+        .bottle { fill: #800020; }
+        .label { fill: #FFFFFF; }
+        .letter { fill: #000000; font-family: Arial, sans-serif; font-size: 8px; }
+      </style>
+    </defs>
+    <rect x="0" y="0" width="100" height="250" fill="none" />
+    <path class="bottle" d="M40,0 Q50,5 50,15 L50,20 Q60,25 70,40 Q75,60 75,100 Q75,180 50,230 Q25,180 25,100 Q25,60 30,40 Q40,25 50,20 L50,15 Q50,5 60,0 Z" />
+    <rect class="label" x="40" y="80" width="20" height="30" rx="2" ry="2" />
+    <text class="letter" x="48" y="100">V</text>
+  </svg>
+  
