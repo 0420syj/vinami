@@ -1,8 +1,14 @@
+import type { NextPage } from "next";
+import { useState } from "react";
+import Head from "next/head";
+import FoodSelect from "@/components/FoodSelect";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Head from "next/head";
 
-export default function Home() {
+const Home: NextPage = () => {
+    const [selectedFood, setSelectedFood] = useState("");
+    const foodOptions = ["Pizza", "Pasta", "Steak", "Seafood", "Salad"];
+
     return (
         <>
             <Head>
@@ -23,8 +29,16 @@ export default function Home() {
                 <meta name="theme-color" content="#ffffff" />
             </Head>
             <Header />
-            <main>{/* Your content goes here */}</main>
+            <main>
+                <FoodSelect
+                    options={foodOptions}
+                    selectedFood={selectedFood}
+                    onSelectFood={food => setSelectedFood(food)}
+                />
+            </main>
             <Footer />
         </>
     );
-}
+};
+
+export default Home;
