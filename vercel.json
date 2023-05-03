@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "projects": [
+        {
+            "name": "mariage",
+            "root": "apps/mariage/",
+            "builds": [
+                {
+                    "src": "package.json",
+                    "use": "@vercel/node",
+                    "config": { "entrypoint": "npm run build" }
+                }
+            ],
+            "routes": [{ "src": "/(?!admin)(.*)", "dest": "apps/mariage/$1" }]
+        },
+        {
+            "name": "admin",
+            "root": "apps/admin/",
+            "builds": [
+                {
+                    "src": "package.json",
+                    "use": "@vercel/node",
+                    "config": { "entrypoint": "npm run build" }
+                }
+            ],
+            "routes": [{ "src": "/admin/(.*)", "dest": "apps/admin/$1" }]
+        }
+    ]
+}
