@@ -24,8 +24,8 @@
         "typescript": "^5.0.2"
     },
     "scripts": {
-        "start-mariage": "yarn workspace mariage dev",
-        "start-admin": "yarn workspace admin dev",
+        "start-mariage": "yarn --cwd apps/mariage dev",
+        "start-admin": "yarn --cwd apps/admin dev",
         "dev": "npm-run-all --parallel start-mariage start-admin",
         "mariage": "yarn workspace mariage",
         "admin": "yarn workspace admin",
