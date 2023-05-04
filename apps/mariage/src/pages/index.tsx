@@ -9,6 +9,7 @@ import { Button } from "@vinami/ui";
 const Home: NextPage = () => {
     const [selectedFood, setSelectedFood] = useState("");
     const [foodOptions, setFoodOptions] = useState<string[]>([]);
+    const [foodName, setFoodName] = useState("");
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
                 }
                 return response.text();
             })
-            .then(data => console.log(data))
+            .then(data => setFoodName(data))
             .catch(error => {
                 console.error("Error fetching data:", error);
             });
@@ -57,6 +58,7 @@ const Home: NextPage = () => {
                             onSelectFood={food => setSelectedFood(food)}
                         />
                         <Button backgroundColor="#5F021F" label="Get FoodName" onClick={getFoodName} primary />
+                        <p>{foodName}</p>
                     </div>
                 )}
             </main>
