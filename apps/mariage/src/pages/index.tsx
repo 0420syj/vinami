@@ -13,11 +13,24 @@ const Home: NextPage = () => {
     useEffect(() => {
         fetch("https://port-0-vinami-backend-3zrm2algdlai1q.sel3.cloudtype.app/api/foods/all")
             .then(response => response.json())
-            .then(data => setFoodOptions(data));
+            .then(data => {
+                setFoodOptions(data);
+                setSelectedFood(data[0]);
+            });
     }, []);
 
-    const handleButtonClick = () => {
-        console.log("Button clicked!");
+    const getFoodName = async () => {
+        fetch(`https://port-0-vinami-backend-3zrm2algdlai1q.sel3.cloudtype.app/api/foods/name?name=${selectedFood}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(data => console.log(data))
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
     };
 
     return (
@@ -33,7 +46,7 @@ const Home: NextPage = () => {
                         selectedFood={selectedFood}
                         onSelectFood={food => setSelectedFood(food)}
                     />
-                    <Button backgroundColor="#5F021F" label="Click here" onClick={handleButtonClick} primary />
+                    <Button backgroundColor="#5F021F" label="Get FoodName" onClick={getFoodName} primary />
                 </div>
             </main>
             <Footer />
