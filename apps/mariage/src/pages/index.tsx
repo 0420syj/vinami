@@ -9,6 +9,7 @@ import { Button } from "@vinami/ui";
 const Home: NextPage = () => {
     const [selectedFood, setSelectedFood] = useState("");
     const [foodOptions, setFoodOptions] = useState<string[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch("https://port-0-vinami-backend-3zrm2algdlai1q.sel3.cloudtype.app/api/foods/all")
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
             .then(data => {
                 setFoodOptions(data);
                 setSelectedFood(data[0]);
+                setLoading(false);
             });
     }, []);
 
@@ -38,16 +40,25 @@ const Home: NextPage = () => {
             <MetaHead />
             <Header />
             <main>
-                <div
-                    style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}
-                >
-                    <FoodSelect
-                        options={foodOptions}
-                        selectedFood={selectedFood}
-                        onSelectFood={food => setSelectedFood(food)}
-                    />
-                    <Button backgroundColor="#5F021F" label="Get FoodName" onClick={getFoodName} primary />
-                </div>
+                {loading ? (
+                    <p>Loading...</p>
+                ) : (
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <FoodSelect
+                            options={foodOptions}
+                            selectedFood={selectedFood}
+                            onSelectFood={food => setSelectedFood(food)}
+                        />
+                        <Button backgroundColor="#5F021F" label="Get FoodName" onClick={getFoodName} primary />
+                    </div>
+                )}
             </main>
             <Footer />
         </>
