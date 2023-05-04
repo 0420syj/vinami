@@ -1,11 +1,11 @@
 import Counter from "../../components/counter";
-import { NewButton } from "@vinami/ui";
+import { Button } from "@vinami/ui";
 
 function CounterPage() {
     return (
         <div>
             <h1>Counter Page</h1>
-            <NewButton
+            <Button
                 label="Button"
                 onClick={() => {
                     console.log("clicked");
