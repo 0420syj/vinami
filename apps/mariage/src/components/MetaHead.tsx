@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
 
 const MetaHead: React.FC = () => {
@@ -19,6 +20,7 @@ const MetaHead: React.FC = () => {
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
             <meta name="msapplication-TileColor" content="#da532c" />
             <meta name="theme-color" content="#ffffff" />
+            <Analytics />
         </Head>
     );
 };
