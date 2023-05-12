@@ -71,6 +71,7 @@
     -   [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) - Yarn Workspaces는 여러 패키지를 하나의 저장소에서 관리할 수 있도록 도와주는 기능입니다.
     -   [Yarn Berry](https://yarnpkg.com/getting-started/qa#why-should-you-upgrade-to-yarn-modern) - Yarn Berry는 속도와 안정성을 향상시키고, 새로운 기능을 추가한 Yarn의 새로운 버전입니다.
 -   [TypeScript](https://www.typescriptlang.org/) - JavaScript의 슈퍼셋으로 정적 타입을 지원합니다.
+-   [Tailwind CSS](https://tailwindcss.com/) - CSS 프레임워크
 -   [Storybook](https://storybook.js.org/) - [common/ui](common/ui)에서 사용된 UI 컴포넌트를 개발하고 테스트할 수 있도록 도와주는 도구입니다.
 -   [Jest](https://jestjs.io/) - 테스트 프레임워크
 
@@ -92,4 +93,4 @@
 
 ## 라이센스
 
-이 프로젝트는 MIT License를 따릅니다. 자세한 내용은 [LICENSE](LICENSE)를 참고하세요.
+이 프로젝트는 [MIT License](LICENSE)를 따릅니다.
