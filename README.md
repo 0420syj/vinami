@@ -71,6 +71,7 @@ These instructions will get you a copy of the project up and running on your loc
     -   [Yarn Workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) - Yarn Workspaces is a feature that allows you to setup multiple packages in such a way that you only need to run yarn install once to install all of them in a single pass.
     -   [Yarn Berry](https://yarnpkg.com/getting-started/qa#why-should-you-upgrade-to-yarn-modern) - Yarn 2 is a new version of Yarn that has been designed from the ground up with reliability, speed, and security in mind. It has already been used to build large production codebases at companies such as Bloomberg, Facebook, Google, and Microsoft.
 -   [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale.
+-   [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
 -   [Storybook](https://storybook.js.org/) - UI component explorer for frontend developers used in [common/ui](common/ui)
 -   [Jest](https://jestjs.io/) - Delightful Javascript Testing Framework with a focus on simplicity
 

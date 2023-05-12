@@ -52,6 +52,7 @@ const Home: NextPage = () => {
                             alignItems: "center",
                         }}
                     >
+                        <h1 className="text-3xl font-bold underline">Hello world!</h1>
                         <FoodSelect
                             options={foodOptions}
                             selectedFood={selectedFood}
